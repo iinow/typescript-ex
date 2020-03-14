@@ -1,29 +1,29 @@
 class Control {
-    public readonly state: any
+  public readonly state: any
 }
 
 interface SelectableControl extends Control {
-    select(): void
+  select(): void
 }
 
 class Button extends Control implements SelectableControl {
-    select(): void {
-        console.log(`버튼 선택`)
-    }
+  select(): void {
+    console.log(`버튼 선택`)
+  }
 }
 
 class TextBox extends Control {
-    select(): void {
-        console.log(`텍스트 박스 선택`)
-    }
+  select(): void {
+    console.log(`텍스트 박스 선택`)
+  }
 }
 
 class Image1 implements SelectableControl {
-    select(): void {
-        console.log(`이미지 선택`)
-    }
+  select(): void {
+    console.log(`이미지 선택`)
+  }
 
-    state: any;
+  state: any
 }
 
 new Button().select()
