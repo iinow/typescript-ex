@@ -37,11 +37,11 @@ const { d } = { d: 'hi' }
 
 console.log(d)
 
-abstract class Animal {
+abstract class BaseAnimal {
   abstract makeSound(): void
 }
 
-class Dog extends Animal {
+class Dog extends BaseAnimal {
   makeSound(): void {
     console.log(`makeSound`)
   }

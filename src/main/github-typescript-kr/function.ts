@@ -1,7 +1,3 @@
-function add(x, y) {
-  return x + y
-}
-
 let myAdd: (x: number, y: number) => number = (
   x: number,
   y: number
@@ -69,7 +65,7 @@ let suits = ['hearts', 'spades', 'clubs', 'diamonds']
 
 function pickCard(x: { suit: string; card: number }[]): number
 function pickCard(x: number): { suit: string; card: number }
-function pickCard(x): any {
+function pickCard(x: any): any {
   // 객체 / 배열로 작업하고 있는지 확인해보세요
   // 그렇다면 그것들은 덱을 주고 사용자는 카드를 선택할 것입니다.
   if (typeof x == 'object') {
